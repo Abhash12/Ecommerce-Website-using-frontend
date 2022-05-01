@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lifestyle Store</title>
+    <link rel="stylesheet" href="">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Festive&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Encode+Sans+SC:wght@300&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Zen+Tokyo+Zoo&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="ecomcss.css">
+</head>
+
+<body>
+    <header>
+        <div id="navbar">
+            <script src="ecomnav.js"></script>
+            <img src="logo3.jpg" alt="logo" class="logo1">
+            <p class="logo">LifeStyle Store</p>
+
+            <form action="https://www.flipkart.com/search" class="form">
+                <button class="search-button">Search</button>
+                <input type="text" name="q" placeholder="Search Product..." id="inpt">
+                <ul id = "sugg">
+
+                </ul>
+            </form>
+            
+            <p class="signup" onclick="location.href = 'signup.html';">Sign Up</p>
+            <p class="signin" onclick="location.href = 'signup.html';">Login</p>
+        </div>
+
+        <div class="button1">
+            <h1 id="heading1"></h1>
+            <script src="ecomjs.js"></script>
+            <p class="para1">Flat 40% OFF on premium brands</p>
+            <form action="https://www.flipkart.com/">
+                <button class="form-button" type="button" onclick="window.location.href = 'https://www.flipkart.com/';">
+                    SHOP NOW
+                </button>
+            </form>
+        </div>
+    </header>
+    <main>
+        <div class="container-1">
+            <div class="flexbox1"
+                onclick="window.location.href = 'https://www.flipkart.com/search?q=cameras&otracker=search&otracker1=search&marketplace=FLIPKART&as-show=on&as=off';">
+                <img src="camera_pic.jpg" alt="cameras" width="247vw" height="170vh">
+                <h2 class="head1">Cameras</h2>
+                <p class="a">Choose among the best in the world</p>
+            </div>
+            <div class="flexbox1"
+                onclick="window.location.href = 'https://www.flipkart.com/search?q=branded%20watches&otracker=search&otracker1=search&marketplace=FLIPKART&as-show=on&as=off';">
+                <img src="watches_pic.jpg" alt="watches" width="247vw" height="170vh">
+                <h2 class="head1">Watches</h2>
+                <p class="a">Original watches from the best brands</p>
+            </div>
+            <div class="flexbox1"
+                onclick="window.location.href = 'https://www.flipkart.com/search?q=branded+shirts+for+men&as=on&as-show=on&otracker=AS_Query_PredictiveAutoSuggest_6_0_na_na_na&otracker1=AS_Query_PredictiveAutoSuggest_6_0_na_na_na&as-pos=6&as-type=PREDICTIVE&suggestionId=branded+shirts+for+men&requestId=e6fd1c7f-b224-4493-b4b9-014e21492bb1';">
+                <img src="shirts_pic.jpg" alt="shirts" width="247vw" height="170vh">
+                <h2 class="head1">Shirts</h2>
+                <p class="a">Our exquisite collection of shirt</p>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="footer1">
+            <p class="footpara">Copyright &copy; Lifestyle Store. All Rights Reserved | COntact Us: +916207868012 </p>
+            <br>
+            <span><a href="https://www.instagram.com/abhash_singh29/" class="fa fa-instagram"></a></span>
+            <span><a href="https://www.facebook.com/abhash.singh.73345/" class="fa fa-facebook"></a></span>
+            <span><a href="https://twitter.com/AbhashS45925906" class="fa fa-twitter"></a></span>
+        </div>
+    </footer>
+
+
+    <script>
+        var prevScrollpos = window.pageYOffset;
+        window.onscroll = function () {
+            var currentScrollPos = window.pageYOffset;
+            if (prevScrollpos > currentScrollPos) {
+                document.getElementById("navbar").style.top = "0";
+                document.getElementById("navbar").style.transition = "0.3s";
+            } else {
+                document.getElementById("navbar").style.top = "-100px";
+                document.getElementById("navbar").style.transition = "0.3s";
+            }
+            prevScrollpos = currentScrollPos;
+        }
+    </script>
+    <script src="trie.js"></script>
+    <script src="trie2.js"></script>
+</body>
+
+</html>

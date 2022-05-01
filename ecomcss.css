@@ -1,0 +1,250 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-image: url("online_shopping_logo.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 90vh;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+
+#navbar {
+    overflow: hidden;
+    background-color: black;
+    width: 100%;
+    height: 8vh;
+    z-index: 2;
+    position: fixed;
+}
+
+.logo1 {
+    float: left;
+    vertical-align: middle;
+    width: 7vw;
+    height: 100%;
+    border-radius: 50%;
+    vertical-align: middle;
+}
+
+.logo {
+    float: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: inline-block;
+    width: 15%;
+    height: 100%;
+    font-size: 3vh;
+    padding-top: 0.7rem;
+    color: grey;
+}
+
+.form {
+    float: none;
+    display: inline-block;
+    width: 45%;
+    height: 100%;
+}
+
+#inpt {
+    border-style: none;
+    border-radius: 5px;
+    background-color: whitesmoke;
+    color: grey;
+    width: 200px;
+    height: 60%;
+    margin-left: 0rem;
+    margin-bottom: 0.3rem;
+    vertical-align: middle;
+    transition: width .35s ease-in-out;
+    border-bottom: 4px solid skyblue;
+}
+
+#inpt:focus {
+    border-style: none;
+    border-radius: 5px;
+    outline: none;
+    width: 250px;
+    border-bottom: 4px solid green;
+}
+
+.search-button {
+    border-style: none;
+    border-radius: 5px;
+    background: linear-gradient(to right, #ffffff, #21bff0);
+    color: grey;
+    margin-right: 0rem;
+    width: 75px;
+    height: 68%;
+    margin-bottom: 0.3rem;
+    vertical-align: middle;
+}
+
+.search-button:hover {
+    background: linear-gradient(to right, #fb5283, #ff3527);
+    color: white;
+}
+
+.signup {
+    cursor: pointer;
+    float: none;
+    transform: translate(14rem, 0rem);
+    text-align: center;
+    display: inline-block;
+    font-family: serif;
+    color: grey;
+    width: 6%;
+    height: 100%;
+}
+
+.signin {
+    cursor: pointer;
+    transform: translate(15rem, 0rem);
+    float: none;
+    display: inline-block;
+    font-family: serif;
+    color: grey;
+    width: 6%;
+    height: 100%;
+}
+
+.signup:hover {
+    color: whitesmoke;
+}
+
+.signin:hover {
+    color: whitesmoke;
+}
+
+.button1 {
+    background-color: black;
+    height: 44vh;
+    width: 50%;
+    opacity: 0.7;
+    margin-top: 25vh;
+    margin-left: 25vw;
+    padding-top: 2vh;
+    line-height: 12vh;
+    display: inline-block;
+}
+
+#heading1 {
+    color: white;
+    text-align: center;
+    font-family: 'Festive', cursive;
+    font-size: 5vw;
+}
+
+.para1 {
+    color: white;
+    text-align: center;
+    font-family: 'Encode Sans SC', sans-serif;
+}
+
+.form-button {
+    border: 0;
+    line-height: 3.6;
+    margin-left: 20vw;
+    padding: 0 20px;
+    font-size: 1rem;
+    text-align: center;
+    color: #fff;
+    text-shadow: 1px 1px 1px #000;
+    border-radius: 10px;
+    background-color: rgba(220, 0, 0, 1);
+    background-image: linear-gradient(to top lef rgba(0, 0, 0, .2), rgba(0, 0, 0, .2) 30%, rgba(0, 0, 0, 0));
+    box-shadow: inset 2px 2px 3px rgba(255, 255, 255, .6), inset -2px -2px 3px rgba(0, 0, 0, .6);
+}
+
+.form-button:hover {
+    background-color: rgba(255, 0, 0, 1);
+}
+
+.form-button:active {
+    box-shadow: inset -2px -2px 3px rgba(255, 255, 255, .6), inset 2px 2px 3px rgba(0, 0, 0, .6);
+}
+
+@media(min-width: 768px) {
+    .container-1 {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        justify-content: space-around;
+        align-items: center;
+        width: 100%;
+        height: 70vh;
+        background-color: white;
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+    }
+}
+
+.flexbox1 {
+    padding-top: 0.4vh;
+    padding-left: 0vh;
+    padding-right: 0vh;
+    background-color: white;
+    color: black;
+    height: 45vh;
+    line-height: 5vh;
+    width: 20vw;
+    text-align: center;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+
+.flexbox1:hover {
+    transform: scale(1.05);
+    transition: transform .2s ease;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+
+.a {
+    size: 2vw;
+    color: black;
+    font-family: 'PT Sans', sans-serif;
+}
+
+.head1 {
+    color: navy;
+    font-family: 'Zen Tokyo Zoo', cursive;
+}
+
+.footer1 {
+    background-color: black;
+    color: white;
+    height: 30vh;
+    width: 100vw;
+    margin: 0px;
+    line-height: 5vh;
+    text-align: center;
+}
+
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 30px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+    border-radius: 40%;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-instagram {
+    background: white;
+    color: black;
+}
+
+.fa-facebook {
+    background: white;
+    color: black;
+}
+
+.fa-twitter {
+    background: white;
+    color: black;
+}
